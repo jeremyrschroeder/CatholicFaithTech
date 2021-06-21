@@ -1,0 +1,64 @@
+#testimonials .carousel {
+  height: 530px;
+}
+#testimonials .carousel-caption {
+  z-index: 10;
+}
+#testimonials .carousel .item {
+  height: 530px;
+  background-color: #7959a6;
+}
+#testimonials .carousel-control.left, #testimonials .carousel-control.right {
+    background-image: none;
+}
+#testimonials .carousel-caption {
+    text-shadow:none;
+    line-height:2.0;
+} 
+#testimonials .carousel-caption p:nth-child(3) {
+    color:#DA9CA2;
+}
+#testimonials .carousel_quote {
+    font-style: italic;
+    line-height:2.0;
+}
+#testimonials .carousel .item {
+    height:460;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #testimonials .carousel-caption h1 {
+    font-size: 25px;
+  }
+  .carousel-caption img {
+    width:auto;
+    height:50px;
+  }
+}
+
+
+@media (min-width: 430px) {
+  #testimonials .carousel-caption p {
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 15px 0 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  #testimonials .carousel-caption p {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 992px) {
+  #testimonials .carousel-caption p {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+}

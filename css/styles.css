@@ -1,0 +1,1127 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700";
+/*---------------------------------------- Bootstrap Overrides ----------------------------------------*/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*CSS Color Variables*/
+:root {
+    --main-purple-color: #7959a6;
+}
+body {
+    font-family:Lato,sans-serif;
+    font-weight:300;
+    padding-bottom:0px !important;
+}
+p {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 300;
+}
+h1 {
+    font-size: 48px;
+    color:#51476c;
+}
+h2 {
+    font-size:22px;
+    line-height: 32px;
+    color:#444a50;
+}
+/*h5 {
+    font-size:18px;
+    color:#3b3b3b;
+}
+h6 {
+    font-size:16px;
+}*/
+a {
+    color:#3b3b3b;
+}
+a:hover {
+  color: #51476c;
+  text-decoration:none;
+}
+a:focus {
+    text-decoration: none;
+}
+
+.centerdiv {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ ::-moz-selection { /* Code for Firefox */
+    color: #FFF;
+    background: #868686;
+}
+::selection {
+    color: #FFF;
+    background: #868686;
+}
+.vparent {
+    display: table;
+    height: 540px;
+    table-layout: fixed;
+}
+.vcenter {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.nowrap {
+    white-space:nowrap;
+}
+/*---------------------------------------- Margin ------------------------------------*/
+.margin-bottom {
+    margin-bottom: 15px;
+}
+.margin-bottom-medium {
+    margin-bottom: 25px;
+}
+.margin-bottom-large {
+    margin-bottom: 40px;
+}
+.margin-bottom-xlarge {
+    margin-bottom: 70px;
+}
+.margin-top {
+    margin-top: 5px;
+}
+.margin-top-medium {
+    margin-top: 25px;
+}
+.margin-top-large {
+    margin-top: 40px;
+}
+.margin-top-xlarge {
+    margin-top: 65px;
+}
+/*---------------------------------------- Buttons ------------------------------------*/
+.btn-default, .btn-default:active {
+    color: #64498a;
+    font-size: 19px;
+    padding: 7px 30px 8px 30px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #795ba4;
+}
+.btn-default:hover {
+    background-color: #795ba4;
+    border-color: #795ba4;
+    color:white;
+}
+.btn-primary {
+    font-size:22px;
+    background-color:#795ba4;
+    border-color:#795ba4;
+    color:white !important;
+    padding: 12px 25px 15px 25px !important;
+    width: 215px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover, .btn-primary:active {
+    background-color: #624788;
+    border-color: #624788;
+}
+/*---------------------------------------- Nav Bar ------------------------------------*/
+.navbar-header {
+    background-color:white;
+    height:80px;
+}
+.navbar-right {
+    margin-top: 28px;
+}
+.navbar-default>.container {
+    height: 122px;
+    padding-top: 35px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: white;
+    color:#3e3e3e;
+}
+.navbar-default {
+    background-color: white;
+    border-color: #e7e7e7;
+    font-size: 17px;
+    font-weight:300;
+    padding-top: 17px;
+    padding-bottom:5px;
+    height: 142px;
+}
+@media (max-width: 991px) {
+    .navbar-default {
+        font-size:15px;
+    }
+}
+.navbar-header {
+    margin-top: 0px;
+}
+.navbar-nav>li>a {
+    color: #222222 !important;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-weight: 400;
+}
+@media (max-width: 992px) {
+    .navbar-nav>li>a  {
+        padding: 15px 10px;
+    }
+}
+.navbar-nav>li>ul>li>a:hover {
+    background-color:#f4f4f4 !important;
+}
+.dropdown-menu>li>a {
+    color: #222222 !important;
+    font-size: 17px;
+    font-weight: 400;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 992px) {
+    .navbar-default {
+        height: intitial;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-default{
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+}
+.navbar-default ul, .navbar-default li {
+    background-color: white;
+    z-index:999 !important;
+}
+.navbar-default form {
+    padding-right:0px;
+    padding-left:25px;
+    margin-top: 7px;
+}
+.navbar-default img {
+    width: 400px;
+    height:auto;
+    margin-top: 3px;
+}
+@media (max-width:660px) {
+    .navbar-default img {
+        margin-left:10px;
+        width:200px;
+    }
+}
+.navbar-form {
+    border-bottom: none;
+}
+.navbar-default .navbar-nav > .active > a {
+    background-color:#FFF;
+}
+#navbar .navbar-nav .active .activeTest {
+  border-bottom: 2px solid #aa0f1d;
+  padding-bottom: 5px;
+}
+.activeTest:hover {
+    border-bottom: 2px solid #7959a6;
+    padding-bottom: 5px;
+}
+.dropdown-menu>.active>a {
+    background-color:#f4f4f4;
+}
+.navbar-default .navbar-nav>.active>a {
+    background-color: white !important;
+}
+.selected {
+    border-bottom: 2px solid #aa0f1d;
+    padding-bottom: 5px;
+}
+.navbar-collapse {
+    margin-right:-15px;
+    margin-left:-15px;
+}
+/*.navbar-collapse li {
+    padding-left:15px;
+}*/
+/*---------------------------------------- HP_intro ----------------------------------------*/
+#hp_introtext {
+    margin: 90px auto 100px auto;
+
+}
+@media (min-width:1200px) {
+    #hp_introtext div {
+    width: 700px;
+    margin: 90px auto 100px auto;
+    }
+}
+/*---------------------------------------- Main Heros ----------------------------------------*/
+.hero_wrapper {
+    background-image: url(https://cdn.cd2learning.com/cft_web/hp_womanwglasses.jpg);
+    -ms-behavior: url(/App_Themes/homepage-learning/backgroundsize.min.htc);
+    background-position: 90%;
+    background-size: cover;
+    height: 580px;
+    z-index: 1;
+}
+.hero_wrapper img {
+    margin-top:-40px;
+}
+.hero_wrapper h1 {
+    color:white;
+    text-align: center;
+    font-size: 77px;
+    font-weight:300;
+    margin-top: 0px;
+}
+.hero_overlay {
+    z-index: 2;
+    height:580px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.hero_overlay_solutions {
+    z-index: 2;
+    height:580px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero_wrapper .container, .about_hero_wrapper .container, .contact_hero_wrapper .container, .thanks_container, .about_hero_wrapper, .learn_hero_wrapper {
+    margin-top:142px;
+}
+.hero_wrapper_cs_chicago span, .hero_wrapper_cs_brooklyn span, .hero_wrapper_cs_rochester span, .hero_wrapper_cs_emmaus span {
+    color:white;
+    font-size:25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.hero_wrapper_cs_chicago {
+    background-image: url(https://cdn.cd2learning.com/cft_web/casestudy_hero_chicago_.jpg);
+    background-repeat:no-repeat;
+    background-position-y:-214px;
+}
+
+@media (max-width:768px) {
+    .hero_wrapper_cs_chicago {
+        background-position: -103px 0px;
+    }
+}
+@media (max-width:992px) and (min-width:768px) {
+    .hero_wrapper_cs_chicago {
+        background-position-y: 0px;
+    }
+}
+@media (max-width:1200px) and (min-width:992px) {
+    .hero_wrapper_cs_chicago {
+        background-position-y: -100px;
+    }
+}
+@media (min-width:1440px) {
+    .hero_wrapper_cs_chicago {
+        background-position-y: -381px;
+    }
+}
+.hero_wrapper_cs_brooklyn {
+    background-image: url(https://cdn.cd2learning.com/cft_web/casestudy_hero_brooklyn_.jpg);
+    background-repeat:no-repeat;
+    background-position-y:-214px;
+}
+@media (max-width:768px) {
+    .hero_wrapper_cs_brooklyn {
+        background-position: -103px 0px;
+    }
+}
+@media (max-width:992px) and (min-width:768px) {
+    .hero_wrapper_cs_brooklyn {
+        background-position-y: 0px;
+    }
+}
+@media (max-width:1200px) and (min-width:992px) {
+    .hero_wrapper_cs_brooklyn {
+        background-position-y: -81px;
+    }
+}
+
+.hero_wrapper_cs_emmaus {
+    background-image: url(https://cdn.cd2learning.com/cft_web/road_to_emmaus.jpg);
+    background-repeat:no-repeat;
+}
+
+.hero_wrapper_cs_rochester {
+    background-image: url(https://cdn.cd2learning.com/cft_web/casestudy_hero_rochester_.png);
+    background-repeat:no-repeat;
+    background-position-y:-112px;
+}
+@media (max-width:768px) {
+    .hero_wrapper_cs_rochester {
+        background-position-y: 0px;
+    }
+}
+@media (max-width:1200px) and (min-width:768px) {
+    .hero_wrapper_cs_rochester {
+        background-position-y: 0px;
+    }
+}
+/*---------------------------------------- HP Archdiocese Bar ----------------------------------------*/
+
+#hp_archdiocese_bar {
+    background-color: var(--main-purple-color);  
+    padding-bottom:70px;
+}
+#hp_archdiocese_bar h1 {
+    color: white;
+    margin-top: 60px;
+    padding-bottom: 35px;
+}
+#hp_archdiocese_bar img {
+    width: 90px;
+    height:auto;
+    float:left;
+}
+#hp_archdiocese_bar h5 {
+    color: white;
+    font-size: 22px;
+    float:left;
+    padding: 25px 0 0 20px;
+}
+#hp_archdiocese_bar .col-sm-3 {
+    display:inline-flex;
+}
+@media (max-width:768px) {
+    #hp_archdiocese_bar img {
+        margin:5px 0;
+        width: auto;
+        height: 91px;
+    }
+}
+@media (max-width:768px) {
+    #hp_archdiocese_bar .col-sm-3 {
+        text-align: center;
+    }
+}
+/*---------------------------------------- HP Beyond Serving Message ----------------------------------------*/
+#beyond_serving_message {
+    margin: 130px 0 0 0;
+}
+#beyond_serving_message h1 {
+    margin-top: 90px;
+}
+@media (max-width:768px) {
+    #beyond_serving_message {
+        margin-top:-10px;
+    }
+}
+/*---------------------------------------- Four Tentents ----------------------------------------*/
+
+#tentents h4 {
+    color:#51476c;
+    font-size: 43px;
+}
+#tentents ul li {
+    font-size:20px;
+    color:#444a50;
+    letter-spacing: 0.25px;
+}
+#tentents .learn, #tentents .serve, #tentents .connect, #tentents .give {
+    height:285px;
+    padding:50px 0 0 90px;
+}
+
+#tentents .learn {
+    background-color: #f3f3f3;
+    border-bottom:9px solid white;
+    border-right:9px solid white;
+}
+#tentents .serve {
+    background-color: #f2f0f7;
+    border-bottom:9px solid white;
+    border-left:9px solid white;
+}
+#tentents .connect {
+    background-color: #e9f2f9;
+    border-right:9px solid white;
+    border-top:9px solid white;
+}
+#tentents .give {
+    background-color: #e3f5f8;
+    border-left:9px solid white;
+    border-top:9px solid white;
+}
+
+@media (max-width:992px) {
+    #tentents .learn, #tentents .serve, #tentents .connect, #tentents .give {
+        border:15px solid white;
+        border-width: 15px 0px 0px 0px;
+        padding: 30px 0 0 25px;
+        height: 250px;
+    }
+}
+/*---------------------------------------- HP Testimonials ------------------------------------*/
+.carousel-caption {
+    position:static;
+    text-align:center;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+#testimonials {
+    color:white;
+    text-align: center;
+    background-color:#7959a6;
+}
+.testimonials_table_parent {
+    display: table;
+    table-layout: fixed;
+    width:70%;
+    margin-right: auto;
+    margin-left:auto;
+    height:450px;
+}
+.testimonials_table_child {
+    display:table-cell;
+    vertical-align:middle;
+}
+#testimonials h1 {
+    color:white;
+    font-size: 30px;
+    padding-bottom:20px;
+}
+/*---------------------------------------- HP Form ------------------------------------*/
+.form-control {
+    box-shadow: none;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 55px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+#hp_form {
+    padding: 85px 0 80px 0;
+}
+#hp_form h1 {
+    padding-bottom:80px;
+}
+#hp_form {
+    font-size:22px;
+    color:#444a50;
+    font-weight: 400;
+}
+/*.checkbox_inputs {
+    margin-left: 20px;
+    margin: 10px 20px 0px 20px;
+}*/
+.checkbox_inputs input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#btn-submit {
+    color: white !important;
+    background: #795ba4 !important;
+    font-size:20px;
+    padding: 12px 55px !important;
+    margin-top: 45px;
+}
+.checkbox_wrapper {
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+/*---------------------------------------- HP Case Studies ------------------------------------*/
+#hp_case_studies h1 {
+    padding:100px 0;
+}
+#hp_case_studies h4 {
+    font-size: 22px;
+    color:#525252;
+    padding-top:54px;
+    font-weight: bold;
+}
+#hp_case_studies p {
+    font-size: 21px;
+    color:#525252;
+}
+@media (max-width:992px) {
+    #hp_case_studies h1 {
+        padding: 50px 0;
+    }
+}
+/*---------------------------------------- HP CTA Bar ------------------------------------*/
+#hp_cta_bar {
+    background-color:#f3f3f3;
+    padding: 45px 20px 70px 20px;
+}
+#hp_cta_bar h5 {
+/*    background-color: #f3f3f3;*/
+    font-size: 34px;
+    color: #525252;
+    padding:25px 0;
+}
+/*---------------------------------------- About Hero ------------------------------------*/
+.about_hero_wrapper {
+    background-image: url(https://cdn.cd2learning.com/cft_web/about_hero2.jpg);
+    background-position: 90%;
+    background-size: cover;
+    -ms-behavior: url(/App_Themes/homepage-learning/backgroundsize.min.htc);
+    height: 580px;
+    z-index: 1;
+}
+.about_hero_wrapper h1, .hero_wrapper_contact, .learn_hero_wrapper h1 {
+    color:white;
+    text-align: center;
+    font-size: 77px;
+}
+/*---------------------------------------- Learn Hero ------------------------------------*/
+.learn_hero_wrapper {
+    background-image: url(https://cdn.cd2learning.com/cft_web/learn_hero.jpg);
+    background-size: cover;
+    -ms-behavior: url(/App_Themes/homepage-learning/backgroundsize.min.htc);
+    height: 580px;
+    z-index: 1;
+    background-position-y: -34px;
+    background-repeat:no-repeat;
+}
+@media (max-width:1090px) {
+   .learn_hero_wrapper {
+        background-position-y: 0px;
+    }
+}
+
+/*---------------------------------------- Contact Hero ------------------------------------*/
+.contact_hero_wrapper {
+    background-image: url(https://cdn.cd2learning.com/cft_web/contact_hero.jpg);
+    background-position: 90%;
+    background-size: cover;
+    -ms-behavior: url(/App_Themes/homepage-learning/backgroundsize.min.htc);
+    height: 580px;
+    z-index: 1;
+}
+.contact_hero_wrapper h1, .hero_wrapper_contact {
+    color:white;
+    text-align: center;
+    font-size: 77px;
+}
+/*---------------------------------------- About Intro ----------------------------------------*/
+#about_introtext {
+    margin: 90px auto 100px auto;
+}
+#about_introtext h1 {
+    margin-bottom:85px;
+}
+#about_introtext h2 {
+    margin-left:auto;
+    margin-right:auto;
+}
+@media (min-width:1200px) {
+   #about_introtext h2 {
+    width: 878px;
+    }
+}
+@media (min-width:1200px) {
+    #about_introtex div {
+    width: 700px;
+    margin: 90px auto 100px auto;
+    }
+}
+/*---------------------------------------- About Accolades ----------------------------------------*/
+#about_accolades {
+    margin: 90px auto 100px auto;
+}
+@media (min-width:1200px) {
+    #about_accolades div {
+/*    margin: 90px auto 100px auto;*/
+    }
+}
+#about_accolades h2 {
+    margin-bottom:80px;
+    margin-left: auto;
+    margin-right:auto;
+}
+@media (min-width:1200px) {
+   #about_accolades h2 {
+    width: 583px;
+    }
+}
+.accolades_cell_parent {
+    display: table;
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left:auto;
+    height:185px;
+}
+.accolades_cell_child {
+    display:table-cell;
+    vertical-align:middle;
+}
+/*---------------------------------------- Learn Page ----------------------------------------*/
+#learn_introtext {
+    margin: 90px 129px;
+    text-align: center;
+}
+@media (max-width:1200px) {
+  #learn_introtext {
+    margin: 90px 50px;
+    }
+}
+@media (max-width:900px) {
+  #learn_introtext {
+    margin: 90px 20px;
+    }
+}
+#learn_introtext h2 {
+    margin-bottom: 80px;
+    font-size: 22px;
+    color:#444a50;
+}
+#learn_selector {
+    height:80px;
+    border:1px ;
+}
+#learn_selector .col-xs-3 {
+    padding-top:20px;
+    height:80px;
+}
+#learn_selector .active {
+    background-color: #f2f0f7;
+    border-radius: 15px 15px 0px 0px;
+}
+#learn_selector a {
+    font-size:18px;
+    color:#121212;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#learn_selector .link_container {
+    padding-bottom: 2px;
+    display: inline-block;
+}
+#learn_selector .active .link_container {
+    border-bottom:4px solid #67489c;
+}
+
+#learn_solutions {
+    padding: 80px 0 50px 0px;
+    background-color:#f2f0f7;
+}
+#learn_solutions .img_row img {
+     padding-bottom: 140px; 
+}
+@media (max-width:767px) {
+    #learn_solutions .img_row img {
+     padding-bottom: 0px !important;
+    }
+}
+#learn_solutions h1 {
+    padding: 0px;
+    font-size: 36px;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: -10px;
+    margin:10px;
+}
+#learn_solutions h2 {
+    padding: 10px 0px 40px 0px;
+    margin-top: 0px;
+}
+#learn_solutions .icons img {
+    display: inline-block;
+    width: 38px;
+    /* height: auto; */
+}
+#learn_solutions .icons {
+    margin-top:30px;
+}
+#learn_process {
+    padding:115px 0px 160px 0px;
+}
+#learn_process h1 {
+    margin:0px;
+    padding-bottom:80px;
+}
+#learn_process img {
+    width:100px;
+    height:auto;
+    padding-bottom:70px;
+}
+@media (max-width:768px) {
+    #learn_process img {
+        padding:40px 0px 20px 0px;
+    }
+}
+#learn_process span {
+    font-weight: 400;
+    color:#444a50;
+}
+#learn_selector .link_container:hover {
+    border-bottom: 3px solid #aa8be0;
+}
+#learn_selector .active .link_container:hover {
+    border-bottom: 4px solid #67489c;
+}
+/*---------------------------------------- Privacy Policy / Terms of Use ------------------------------------*/
+.legal {
+    padding-bottom:100px;
+    margin-top:200px;
+}
+.legal h1 {
+    color:#2b7eb0;
+    font-weight:400;
+}
+.legal h3 {
+    color:#2b7eb0;
+    font-weight:400;
+}
+.legal p {
+    padding-bottom:20px;
+}
+.legal table {
+    width:100%;
+}
+.legal table, td, th {
+    border: 1px solid black;
+}
+.legal a:hover {
+    color: #2073a7;
+}
+table th {
+    background-color:#f5f5f5;
+}
+table th, table td {
+    padding:15px;
+}
+/*---------------------------------------- Footer ------------------------------------*/
+footer {
+    padding:115px 0;
+}
+footer p {
+    font-size: 14px;
+    padding-top:10px;
+}
+footer a:hover {
+    color: #2073a7;
+}
+.footer_logo {
+     padding-bottom:35px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.ft_headers {
+    font-size:22px;
+    color:#444a50;
+    font-weight: bold;
+    display: none;
+}
+.social_icons {
+    width:20px;
+    height:auto;
+    margin: 4px;
+}
+/*----------*/
+.navbar-fixed-top {
+    background-color:white;
+    border-bottom:1px solid #f3f3f3;
+}
+.footer_offset {
+    margin-top:120px;
+}
+/*---------------------------------------- Logo Fix ------------------------------------*/
+
+#tentents img {
+    position: relative;
+    top: 365px;
+    left: calc(50% - 90px);
+    width: 180px;
+    height: auto;
+    z-index: 1000;
+}
+@media (max-width:992px) {
+    #tentents img {
+        display:none;
+    }
+}
+.tentents a:hover {
+}
+.tentents a .learn:hover {
+    background-color: #f6f6f6 !important;
+    cursor: pointer !important;
+}
+.tentents a .serve:hover {
+    background-color: #f3effc !important;
+    cursor: pointer !important;
+}
+.tentents a .connect:hover {
+    background-color: #e9f6ff !important;
+    cursor: pointer !important;
+}
+.tentents a .give:hover {
+    background-color: #e4faff !important;
+    cursor: pointer !important;
+}
+.tentents .learn:hover h4, .tentents .serve:hover h4,  .tentents .connect:hover h4, .tentents .give:hover h4 {
+    margin-top:9px;
+}
+.tentents .learn:hover h4, .tentents .learn:hover li, .tentents .serve:hover h4, .tentents .serve:hover li, .tentents .connect:hover h4, .tentents .connect:hover li, .tentents .give:hover h4, .tentents .give:hover li {
+    color: black !important;
+    font-weight: 300 !important;
+}
+/*---------------------------------------- Case Studies ------------------------------------*/
+.cs_statbox {
+    background-color:#f3f3f3;
+    font-size:22px;
+    padding: 60px 0;
+}
+@media (max-width:992px) {
+    .cs_statbox {
+    }
+}
+/*.cs_statbox_stat {
+    font-size: 55px;
+    color:#51476c;
+}*/
+/*--------Insert Image-------*/
+.cs_statbox h1 {
+    font-size:50px;
+    color:#51476c;
+    font-weight: 400;
+}
+
+.cs_statbox p { 
+    font-size:22px;
+}
+.cs_challenge_header {
+    color:#51476c;
+}
+
+.cs_solution_header {
+    font-size: 55px;
+    color:#51476c;
+}
+
+.cs_solutions_callout1, .cs_solutions_callout2, .cs_solutions_callout3  {
+    text-align: left;
+    height:460px;
+    font-size: 22px;
+}
+.cs_solutions_callout1 h3, .cs_solutions_callout2 h3, .cs_solutions_callout3 h3 {
+    font-weight:bold;
+    font-size:22px !important;
+    margin-top:0px;
+}
+@media (max-width:991px) {
+    .cs_solutions_callout1 h3, .cs_solutions_callout2 h3, .cs_solutions_callout3 h3 {
+        margin-top:35px;
+    }
+}
+.cs_solutions_callout1 p, .cs_solutions_callout2 p, .cs_solutions_callout3 p {
+    font-size:22px !important;
+    padding:0px 50px 20px 0;
+}
+
+/*----- Subheros -----*/
+.cs_subhero_chicago {
+    background-image: url(https://cdn.cd2learning.com/cft_web/cs_subhero_chicagointerior.jpg);
+    background-size: cover;
+    height: 500px;
+}
+@media (max-width:768px) {
+    .cs_subhero_chicago {
+        background-position-x: -317px;
+        background-repeat:no-repeat;
+    }
+}
+.cs_subhero_brooklyn {
+    background-image: url(https://cdn.cd2learning.com/cft_web/casestudy_subhero_brooklyn_.jpg);
+    background-size: cover;
+    height: 500px;
+}
+@media (max-width:992px) and (min-width:768px) {
+    .cs_subhero_brooklyn {
+        background-position-x: -359px;
+        background-repeat:no-repeat;
+    }
+}
+@media (max-width:768px) {
+    .cs_subhero_brooklyn {
+        background-position-x: -388px;
+        background-repeat:no-repeat;
+    }
+}
+.cs_subhero_rochester {
+    background-image: url(https://cdn.cd2learning.com/cft_web/casestudy_subhero_rochester_.png);
+    background-size: cover;
+    height: 500px;
+}
+@media (max-width:768px) {
+    .cs_subhero_rochester {
+        background-position-x: -100px;
+        background-repeat:no-repeat;
+    }
+}
+/*-----  -----*/
+.challenge_container_vparent {
+    display: table;
+    height: 540px;
+    table-layout: fixed;
+}
+@media (max-width:991px) {
+    .challenge_container_vparent {
+        display: table;
+        height: 140px;
+        table-layout: fixed;
+    }
+}
+.challenge_container h1 { 
+    margin-top:-20px;
+}
+@media (max-width: 991px) {
+    .challenge_container h1 {
+        margin: 90px 0 -20px 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.challenge_container h2 { 
+    padding:60px 0;
+    text-align: left;
+}
+.challenge_container_vparent.text-center {
+    margin-left:auto;
+    margin-right:auto;
+}
+/*---------------------------------------- CFT Overview Landing Page ------------------------------------*/
+.cft_video {
+    margin-top:185px;
+    padding:20px 0px 60px 0px;
+}
+.cft_video h1 {
+    font-size:45px;
+}
+@media (max-width: 768px) {
+    .cft_video h1 {
+        margin-top:45px;
+    }
+}
+@media (min-width: 991px) {
+    .cft_video h1 {
+        margin-top:0px;
+    }
+}
+@media (max-width: 991px) {
+    .cft_video {
+        text-align: center;
+    }
+}
+@media (min-width: 991px) {
+    .cft_video h1, .cft_video h2 {
+        padding-left:20px;
+    }
+    .cft_video {
+        margin-top: 85px;
+        padding: 20px 0px 60px 0px;
+    }
+}
+@media (max-width: 991px) {
+    .cft_video {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .cft_video {
+        margin-top: 0px
+    }
+}
+
+#emmaus {
+    background-color:#263237;
+    color:white;
+}
+#emmaus .blue_square {
+    text-align: center;
+    margin-top: -30px;
+}
+#emmaus ul li {
+    font-size: 17px !important;
+}
+#emmaus h2 {
+    color:white;
+    font-size: 26px;
+    font-weight: bold;
+}
+#emmaus h3 {
+    color:#263237;
+    font-size: 22px;
+    font-weight: 4;
+}
+#emmaus ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+#emmaus p {
+    color:white;
+    font-size:22px;
+    padding: 50px 50px 30px 50px;
+    /* line-height: 30px; */
+}
+@media (max-width: 768px) {
+    #emmaus p {
+        text-align: center;
+        padding-bottom:50px;
+    }
+}
+#emmaus a {
+    color:white;
+    font-size: 19px;
+    /* padding:50px; */
+    font-weight: 400;
+}
+.blue_square p {
+    color:white;
+    font-size:17px;
+    padding:20px;
+    text-align: center;
+}
+.blue_square span {
+    font-weight:bold;
+}
+.cdu_text {
+    padding: 20px 60px;
+}
+@media (max-width: 768px) {
+.cdu_text {
+    text-align: center;
+    }
+}
+#cdu_section {
+    background-color: #243469;
+    color:white;
+}
+#cdu_section, #cdu_section p {
+    font-size: 21px;
+}
+#cdu_section a {
+    color:white;
+    font-weight:400;
+    margin-top:10px;
+}
+#cdu_section h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+.cdu_logo {
+    background-color:white;
+    padding: 75px 0px 75px 30px;
+    margin: 60px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 768px) {
+    .cdu_logo {
+        margin:0px;
+    }
+}
